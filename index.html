@@ -4,6 +4,14 @@
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+type="text/JavaScript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+></script>
+<script
+type="text/JavaScript"
+src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+></script>
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red Hat Text">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -120,9 +128,7 @@ body, html {
         <img src="/img/retreat.JPG" class="w3-round w3-image my-img-size-2 my-float-right my-padding-right" alt="Choirmates at retreat gathered around piano and singing." width="400">
       </div>
   
-
-<div class="w3-row w3-center  w3-padding-16">
-</div>
+      
  <!-- Listen -->
       <!-- responsive and grid 
         https://www.w3schools.com/w3css/w3css_responsive.asp
@@ -229,10 +235,250 @@ body, html {
         </div>
         
         
+ <!-- Members -->
+ <div id="members" class="w3-container w3-padding-top-64">
+  <h1 class="w3-center">MEMBERS</h1>
+  <div class="w3-responsive">
+    <table id="myTable" class="w3-table-all">
+      <thead>
+        <tr class="w3-black">
+          <th>NAME</th>
+          <th>SECTION</th>
+          <th>MONTHS INVOLVED</th>
+          <th>OTHER PROJECTS</th>
+        </tr>
+      </thead>
+      <tr class="w3-hover-lime">
+        <td>Derek Sup</td>
+        <td>Director</td>
+        <td>18</td>
+        <td>Katsy Pline</td>
+      </tr>
+      <tr class="w3-hover-lime">
+        <td>Liana Warren</td>
+        <td>Soprano</td>
+        <td>12</td>
+        <td>Liana for Now</td>
+      </tr>
+      <tr class="w3-hover-lime">
+        <td>Adaline Dugan</td>
+        <td>Tenor</td>
+        <td>12</td>
+        <td>Death</td>
+      </tr>
+      <tr class="w3-hover-lime">
+        <td>Will Knowles</td>
+        <td>Tenor</td>
+        <td>6</td>
+        <td>Cool SF Jam Group</td>
+      </tr>
+      <tr class="w3-hover-lime">
+        <td>Craig Moodie</td>
+        <td>Bass</td>
+        <td>12</td>
+        <td>Choir Band</td>
+      </tr>
+      <tr class="w3-hover-lime">
+        <td>Isa Defusco</td>
+        <td>Alto</td>
+        <td>6</td>
+        <td>Noise Lap Steel with a Sitar Pedal</td>
+      </tr>
+    </table>
+  </div>
+</div>        
         
-        
+ <!-- Get Involved -->
+ <div id="getinvolved" class="w3-container w3-padding-top-64">
+  <h1 class="w3-center">GET INVOLVED</h1>
+  <div class="w30-row">
+    <div class="w3-col m4 w3-center">
+      <iframe width="280" height="158" src="https://www.youtube.com/embed/p-dIEhl_Zzo?si=yDnp4ZwlCujWNR4q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="w3-col m4 w3-center">
+      <iframe width="280" height="158" src="https://www.youtube.com/embed/o8cAAKxv5bA?si=FKh8fFpFJIf3oxsJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="w3-col m4 w3-center">
+      <iframe width="280" height="158" src="https://www.youtube.com/embed/x0kqQvVSam0?si=Ka8E4dbUC43jAPsu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  
 
+  <hr />
 
+  <div class="w3-row">
+    <div class="w3-col s6 w3-left" style="padding-right: 3px">
+      <button
+        onclick="myAccordion('accordion1')"
+        class="w3-button w3-block w3-black w3-center-align"
+      >
+        <h4>HOW TO JOIN <i class="fa fa-caret-down"></i></h4>
+      </button>
+      <div
+        id="accordion1"
+        class="w3-hide w3-container"
+        style="height: 260px"
+      >
+        <p>
+          1. Email us. 
+        </p>
+        <p>
+          2. Tell us why you're interested. 
+        </p>
+        <p>
+          3. Audition. 
+        </p>
+      </div>
+    </div>
+    <div class="w3-col s6 w3-left" style="padding-left: 3px">
+      <button
+        onclick="myAccordion('accordion2')"
+        class="w3-button w3-block w3-black w3-center-align"
+      >
+        <h4>DONATE <i class="fa fa-caret-down"></i></h4>
+      </button>
+      <div
+        id="accordion2"
+        class="w3-hide w3-container"
+        style="height: 260px"
+      >
+        <p>
+          - Monthly sponsorships 
+        </p>
+        <p>
+          - Credit card donations
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Gallery -->
+ <div id="gallery" class="w3-container w3-padding-top-64">
+  <h1 class="w3-center">GALLERY</h1>
+
+  <div class="w3-row-padding" style="margin: 15px 0px">
+    <div class="w3-col s4">
+      <img
+        src="./img/lightbox1.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal01').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+    <div class="w3-col s4">
+      <img
+        src="./img/lightbox2.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal02').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+    <div class="w3-col s4">
+      <img
+        src="./img/lightbox3.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal03').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+  </div>
+
+  <div class="w3-row-padding" style="margin: 15px 0px">
+    <div class="w3-col s4">
+      <img
+        src="./img/lightbox4.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal04').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+    <div class="w3-col s4">
+      <img
+        src="./img/lightbox5.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal05').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+    <div class="w3-col s4">
+      <img
+        src="./img/lightbox6.jpg"
+        style="width: 100%; cursor: zoom-in"
+        onclick="document.getElementById('modal06').style.display='block'"
+        class="w3-hover-shadow"
+      />
+    </div>
+  </div>
+
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span
+      class="w3-text-black w3-xxlarge w3-hover-text-black w3-container w3-display-topright"
+      style="cursor: pointer"
+      >&times;</span
+    >
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/lightbox1.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+    <span
+      class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+      style="cursor: pointer"
+      >&times;</span
+    >
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/lightbox2.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+    <span
+      class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+      style="cursor: pointer"
+      >&times;</span
+    >
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/lightbox3.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+    <span
+      class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+      style="cursor: pointer"
+      >&times;</span
+    >
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/lightbox4.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+    <span
+      class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+      style="cursor: pointer"
+      >&times;</span
+    >
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/lightbox5.jpg" style="width: 100%" />
+    </div>
+  </div>
+
+  <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+    <span
+      class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+      style="cursor: pointer"
+      >&times;</span
+    >
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/lightbox6.jpg" style="width: 100%" />
+    </div>
+  </div>
+</div>
+
+<hr />
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
@@ -335,6 +581,35 @@ function toggleFunction() {
         x[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " w3-opacity-off";
       }
+
+      // accordion
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace(
+              "w3-brown",
+              "w3-2021-raspberry-sorbet"
+            );
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace(
+              "w3-2021-raspberry-sorbet",
+              "w3-brown"
+            );
+        }
+      }
+
+      // sortable table
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [[1, 0]], // first index - column. second index - 0 for asc; 1 for desc
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
     </script>
   </body>
 </html>
